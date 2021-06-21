@@ -44,8 +44,5 @@ public class washController : MonoBehaviour
         }
     }
 
-    void setText()
-    {
-
-    }
+    
 }

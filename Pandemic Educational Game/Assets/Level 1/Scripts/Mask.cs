@@ -4,14 +4,13 @@ using UnityEngine;
 
 public class Mask : MonoBehaviour
 {
-    public float RotationSpeed = 5;
+    private float RotationSpeed = 5;
 
-    // Update is called once per frame
-    void Update()
+    public void setRotationSpeed(float newRtSpeed)
     {
-
-
+        RotationSpeed = newRtSpeed;
     }
+
     private void OnMouseDrag()
     {
         transform.Rotate((Input.GetAxis("Mouse Y") * RotationSpeed), 0, 0, Space.World);

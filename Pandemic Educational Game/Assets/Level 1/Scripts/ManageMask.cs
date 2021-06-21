@@ -24,6 +24,7 @@ public class ManageMask : MonoBehaviour
         //1 - 5 arası maske için ideal pozisyon
         if (masks[a].transform.rotation.eulerAngles.z < 5 && masks[a].transform.rotation.eulerAngles.z > 1)
         {
+            masks[a].GetComponent<Mask>().setRotationSpeed(0f);
             tiks[a].SetActive(true);
             Debug.Log("Maske düzeltildi.");
             //Düzeltilen maske son maske değilse if içine giriyoruz.
