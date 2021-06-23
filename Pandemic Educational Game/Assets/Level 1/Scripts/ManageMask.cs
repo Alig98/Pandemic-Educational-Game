@@ -9,7 +9,7 @@ public class ManageMask : MonoBehaviour
     private GameObject h;
     public GameObject[] masks;
     public GameObject[] tiks;
-    
+    int sceneToLoad = 2;
     private void Start()
     {
         h = GameObject.Find("Heads");
@@ -40,7 +40,7 @@ public class ManageMask : MonoBehaviour
             else
             {
                 Debug.Log("Level Completed");
-                SceneManager.LoadScene(1);
+                SceneManager.LoadScene(sceneToLoad);
             }
                 
             
