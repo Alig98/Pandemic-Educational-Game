@@ -9,9 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: 2aba385025c1083478427d5e95685c48
   - enabled: 1
-    path: "Assets/Scenes/Maskeleri d\xFCzelt.unity"
+    path: Assets/Scenes/Level 1.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
-    path: "Assets/Scenes/el y\u0131ka.unity"
+    path: Assets/Scenes/Level 2.unity
     guid: 315a63d5efded274eafb3f6ce4731dc1
   m_configObjects: {}
