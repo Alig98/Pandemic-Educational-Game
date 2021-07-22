@@ -1037,6 +1037,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timer: {fileID: 1407051699}
+  time: 20
   frame: {fileID: 2022576595}
 --- !u!4 &762673741
 Transform:

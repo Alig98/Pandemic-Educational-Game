@@ -6,10 +6,11 @@ using UnityEngine.UI;
 public class Timer : MonoBehaviour
 {
     public Slider timer;
+    public float time;
     public GameObject frame;
     void Start()
     {
-        timer.maxValue = 20f;
+        timer.maxValue = time;
     }
 
     // Update is called once per frame
