@@ -5,10 +5,19 @@ using UnityEngine;
 public class Mask : MonoBehaviour
 {
     private float RotationSpeed = 5;
+    public bool isDragging = false;
 
     public void setRotationSpeed(float newRtSpeed)
     {
         RotationSpeed = newRtSpeed;
+    }
+    private void OnMouseDown()
+    {
+        isDragging = true;
+    }
+    private void OnMouseUp()
+    {
+        isDragging = false;
     }
 
     private void OnMouseDrag()

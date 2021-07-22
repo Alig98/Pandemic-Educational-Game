@@ -21,6 +21,7 @@ public class ManageMask : MonoBehaviour
     }
     private void Update()
     {
+        if (masks[a].GetComponent<Mask>().isDragging == false) {
         //1 - 5 arası maske için ideal pozisyon
         if (masks[a].transform.rotation.eulerAngles.z < 5 && masks[a].transform.rotation.eulerAngles.z > 1)
         {
@@ -40,12 +41,14 @@ public class ManageMask : MonoBehaviour
             else
             {
                 Debug.Log("Level Completed");
-                SceneManager.LoadScene(sceneToLoad);
+                //SceneManager.LoadScene(sceneToLoad);
             }
                 
             
                 
         }
+        }
+
     }
     //Kamerayı bir sonraki yüze çevirmek için kullanılan method
     private void slideHead()
