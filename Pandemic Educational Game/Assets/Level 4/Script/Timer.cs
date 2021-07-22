@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class Timer : MonoBehaviour
 {
     public Slider timer;
+    public GameObject frame;
     void Start()
     {
         timer.maxValue = 20f;
@@ -15,5 +16,9 @@ public class Timer : MonoBehaviour
     void Update()
     {
         timer.value += Time.deltaTime;
+        if(timer.value == timer.maxValue)
+        {
+            frame.SetActive(true);
+        }
     }
 }
