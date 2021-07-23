@@ -9,9 +9,10 @@ public class ManageMask : MonoBehaviour
     private GameObject h;
     public GameObject[] masks;
     public GameObject[] tiks;
-    int sceneToLoad = 2;
+    int sceneToLoad ;
     private void Start()
     {
+        sceneToLoad = Random.Range(1, 5);
         h = GameObject.Find("Heads");
         //İlk maske dışındaki maskeleri etkisiz hale getiriyoruz.
         for(int i = 1; i < masks.Length; i++)
@@ -41,7 +42,7 @@ public class ManageMask : MonoBehaviour
             else
             {
                 Debug.Log("Level Completed");
-                //SceneManager.LoadScene(sceneToLoad);
+                SceneManager.LoadScene(sceneToLoad);
             }
                 
             

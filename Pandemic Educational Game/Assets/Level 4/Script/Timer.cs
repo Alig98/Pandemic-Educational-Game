@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+
 
 public class Timer : MonoBehaviour
 {
@@ -20,6 +22,10 @@ public class Timer : MonoBehaviour
         if(timer.value == timer.maxValue)
         {
             frame.SetActive(true);
+            if (Input.GetMouseButtonDown(0))
+            {
+                SceneManager.LoadScene(0);
+            }
         }
     }
 }
