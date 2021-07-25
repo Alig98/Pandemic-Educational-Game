@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class ManageMask : MonoBehaviour
@@ -23,31 +21,33 @@ public class ManageMask : MonoBehaviour
     private void Update()
     {
         if (masks[a].GetComponent<Mask>().isDragging == false) {
-        //1 - 5 arası maske için ideal pozisyon
-        if (masks[a].transform.rotation.eulerAngles.z < 5 && masks[a].transform.rotation.eulerAngles.z > 1)
-        {
+            Debug.Log(masks[a].transform.rotation.eulerAngles.z);
+            //1 - 5 arası maske için ideal pozisyon
+            if (masks[a].transform.rotation.eulerAngles.z < 5 && masks[a].transform.rotation.eulerAngles.z > 1)
+            {
+            Debug.Log(masks[a].transform.rotation.eulerAngles.z);
             masks[a].GetComponent<Mask>().setRotationSpeed(0f);
             tiks[a].SetActive(true);
             Debug.Log("Maske düzeltildi.");
             //Düzeltilen maske son maske değilse if içine giriyoruz.
-            if (a != masks.Length - 1)
-            {
+                if (a != masks.Length - 1)
+                {
                 //1 saniyenin ardından sağdaki kafaya geçiyoruz.
                 Invoke("slideHead", 1);
                 //Bir sonraki kafanın maskesini aktifleştiriyoruz.
                 masks[a + 1].SetActive(true);
                 a += 1;
-            }
+                }
             //Son maske takılınca else içine giriyoruz
-            else
-            {
+                else
+                {
                 Debug.Log("Level Completed");
-                SceneManager.LoadScene(sceneToLoad);
-            }
+                    SceneController.Instance.AnotherLevel();
+                }
                 
             
                 
-        }
+            }
         }
 
     }

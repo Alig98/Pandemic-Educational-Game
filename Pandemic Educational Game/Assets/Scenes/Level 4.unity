@@ -1282,7 +1282,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 765130485}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1450570524}
+        m_MethodName: TickButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &765130485
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1463,7 +1474,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 778813326}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1450570524}
+        m_MethodName: TickButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &778813326
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1581,7 +1603,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 779648724}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1450570524}
+        m_MethodName: CrossButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &779648724
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1851,7 +1884,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &964562541
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2014,7 +2047,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 986314557}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1450570524}
+        m_MethodName: TickButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &986314557
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2132,7 +2176,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1005705114}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1450570524}
+        m_MethodName: TickButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1005705114
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2170,6 +2225,90 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1005705111}
   m_CullTransparentMesh: 0
+--- !u!1001 &1009583580
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2047349595191465058, guid: 9ad0726534bb7b743ae1727030f7a50c,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2047349595191465058, guid: 9ad0726534bb7b743ae1727030f7a50c,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2047349595191465058, guid: 9ad0726534bb7b743ae1727030f7a50c,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2047349595191465058, guid: 9ad0726534bb7b743ae1727030f7a50c,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2047349595191465058, guid: 9ad0726534bb7b743ae1727030f7a50c,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2047349595191465058, guid: 9ad0726534bb7b743ae1727030f7a50c,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2047349595191465058, guid: 9ad0726534bb7b743ae1727030f7a50c,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2047349595191465058, guid: 9ad0726534bb7b743ae1727030f7a50c,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2047349595191465058, guid: 9ad0726534bb7b743ae1727030f7a50c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2047349595191465058, guid: 9ad0726534bb7b743ae1727030f7a50c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2047349595191465058, guid: 9ad0726534bb7b743ae1727030f7a50c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2047349595191465060, guid: 9ad0726534bb7b743ae1727030f7a50c,
+        type: 3}
+      propertyPath: m_Name
+      value: SceneController
+      objectReference: {fileID: 0}
+    - target: {fileID: 2047349595191465061, guid: 9ad0726534bb7b743ae1727030f7a50c,
+        type: 3}
+      propertyPath: time
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 2047349595191465061, guid: 9ad0726534bb7b743ae1727030f7a50c,
+        type: 3}
+      propertyPath: frame
+      value: 
+      objectReference: {fileID: 1119496443}
+    - target: {fileID: 2047349595191465061, guid: 9ad0726534bb7b743ae1727030f7a50c,
+        type: 3}
+      propertyPath: timer
+      value: 
+      objectReference: {fileID: 1048893294}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9ad0726534bb7b743ae1727030f7a50c, type: 3}
 --- !u!1 &1048893292
 GameObject:
   m_ObjectHideFlags: 0
@@ -2205,7 +2344,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 2.4400024, y: -3.399994}
+  m_AnchoredPosition: {x: 2.4400024, y: -3.4000244}
   m_SizeDelta: {x: -4.8799987, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1048893294
@@ -2338,7 +2477,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1058790551}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1450570524}
+        m_MethodName: CrossButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1058790551
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2628,7 +2778,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1228451388
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2791,7 +2941,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1242158596}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1450570524}
+        m_MethodName: TickButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1242158596
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2931,7 +3092,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1283273286
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3094,7 +3255,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1286741253}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1450570524}
+        m_MethodName: CrossButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1286741253
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3416,7 +3588,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1426571781}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1450570524}
+        m_MethodName: CrossButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1426571781
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3569,6 +3752,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb6078c6ce25cd5499448173971430a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  frame: {fileID: 1119496443}
 --- !u!54 &1450570525
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3786,7 +3970,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1577556344
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3949,7 +4133,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1599607954}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1450570524}
+        m_MethodName: CrossButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1599607954
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4197,7 +4392,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1906572518
 RectTransform:
   m_ObjectHideFlags: 0

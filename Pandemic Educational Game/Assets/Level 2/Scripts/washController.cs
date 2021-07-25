@@ -1,18 +1,16 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.SceneManagement;
+using TMPro;
 
 public class washController : MonoBehaviour
 {
     float t = 0;
     private Animator myAnim;
-    private Text timer;
+    private TextMeshProUGUI timer;
     bool started = false;
     void Start()
     {
-        timer = GameObject.Find("Timer").GetComponent<Text>();
+        timer = GameObject.Find("Timer").GetComponent<TextMeshProUGUI>();
         myAnim = GetComponent<Animator>();
     }
 
@@ -30,7 +28,8 @@ public class washController : MonoBehaviour
             timer.text = ((int) t).ToString();
             if (t >= 20)
             {
-                Debug.Log("Level Completed");
+
+                SceneController.Instance.AnotherLevel();
                 started = false;
                 
             }

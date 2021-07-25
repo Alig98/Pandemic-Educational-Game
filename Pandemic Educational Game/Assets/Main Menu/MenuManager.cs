@@ -1,13 +1,12 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class MenuManager : MonoBehaviour
 {
-    int sceneToLoad=1;
+    int sceneToLoad;
     public void PlayButton()
     {
+        sceneToLoad = Random.Range(1, 5);
         SceneManager.LoadScene(sceneToLoad);
     }
     public void QuitButton()
