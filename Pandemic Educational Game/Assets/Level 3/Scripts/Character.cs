@@ -45,10 +45,17 @@ public class Character : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-       
-        timerStart = true;
-        Debug.Log(time);
-        circle.sprite = redCircle;
+        if (other.tag == "Finish")
+        {
+            SceneController.Instance.AnotherLevel();
+        }
+        else
+        {
+            timerStart = true;
+            Debug.Log(time);
+            circle.sprite = redCircle;
+        }
+        
         
        
     }

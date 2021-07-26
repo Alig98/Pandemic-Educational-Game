@@ -14,9 +14,10 @@ public class washController : MonoBehaviour
         myAnim = GetComponent<Animator>();
     }
 
-    // Update is called once per frame
+    
     void Update()
     {
+        //Tıklanınca yıkamaya başlıyor
         if (Input.GetMouseButtonDown(0))
         {
             myAnim.SetBool("isWashing", true);
@@ -26,6 +27,7 @@ public class washController : MonoBehaviour
         {
             t += Time.deltaTime;
             timer.text = ((int) t).ToString();
+            //20 saniye yıkayınca bölüm başarıyla geçiliyor
             if (t >= 20)
             {
 
@@ -34,8 +36,10 @@ public class washController : MonoBehaviour
                 
             }
         }
+        //Tıklama bırakılınca yıkamayı bırakıyor
         if (Input.GetMouseButtonUp(0))
         {
+            //Zaman ve animason sıfırlanıyor
             myAnim.SetBool("isWashing", false);
             started = false;
             t = 0;

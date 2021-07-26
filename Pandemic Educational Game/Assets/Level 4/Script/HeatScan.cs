@@ -7,7 +7,6 @@ public class HeatScan : MonoBehaviour
     float heat;
     bool isOkay=false;
     private GameObject h;
-    public GameObject frame;
     int headIndex = 1;
     
 
@@ -17,10 +16,6 @@ public class HeatScan : MonoBehaviour
         
     }
 
-    void Update()
-    {
-        
-    }
     private void OnTriggerEnter(Collider other)
     {
         //Setting canvas active
@@ -81,7 +76,7 @@ public class HeatScan : MonoBehaviour
     }
     private void notWin()
     {
-        frame.SetActive(true);
+        SceneController.Instance.frame.SetActive(true);
         
 
     }

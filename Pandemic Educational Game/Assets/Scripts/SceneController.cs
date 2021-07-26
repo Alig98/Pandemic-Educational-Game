@@ -10,6 +10,7 @@ public class SceneController : MonoBehaviour
     public Slider timer;
     public float time;
     public GameObject frame;
+    public GameObject endPanel;
 
     private void Awake()
     {
@@ -37,6 +38,14 @@ public class SceneController : MonoBehaviour
 
    
     public void AnotherLevel()
+    {
+        endPanel.SetActive(true);
+        timer.value = 0;
+        //2 saniye sonra sahne değiştir
+        Invoke(nameof(toAnotherLevel), 2);
+        
+    }
+    public void toAnotherLevel()
     {
         tempScene = Random.Range(1, 5);
 
