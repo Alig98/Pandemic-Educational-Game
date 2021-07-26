@@ -14,6 +14,7 @@ public class SceneController : MonoBehaviour
 
     private void Awake()
     {
+        Time.timeScale = 1;
         Instance = this;
         sceneToLoad = SceneManager.GetActiveScene().buildIndex;
         timer.maxValue = time;
@@ -29,6 +30,7 @@ public class SceneController : MonoBehaviour
         }
         if (frame.activeSelf)
         {
+            Time.timeScale = 0;
             if (Input.GetMouseButtonDown(0))
             {
                 SceneManager.LoadScene(0);

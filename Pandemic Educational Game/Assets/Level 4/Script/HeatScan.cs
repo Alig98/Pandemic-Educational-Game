@@ -69,16 +69,12 @@ public class HeatScan : MonoBehaviour
         {
             Vector3 v3 = h.transform.position - Vector3.right * 3;
             h.transform.SetPositionAndRotation(v3, Quaternion.identity);
+            headIndex += 1;
         }
-        
-       
-
     }
     private void notWin()
     {
         SceneController.Instance.frame.SetActive(true);
-        
-
     }
 
 }

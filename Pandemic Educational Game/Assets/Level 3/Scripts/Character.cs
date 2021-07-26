@@ -9,7 +9,7 @@ public class Character : MonoBehaviour
     public Image circle;
     public Sprite redCircle;
     public Sprite greenCircle;
-    private float time=1f;
+    private float time=0.5f;
     private bool timerStart=false;
     [SerializeField]private float speed=15f;
     private void Start()
@@ -17,7 +17,7 @@ public class Character : MonoBehaviour
         animator = GetComponent<Animator>();
         circle.sprite = greenCircle;
     }
-    private void Update()
+    private void FixedUpdate()
     {
         if (Input.GetMouseButton(0))
         {
@@ -63,6 +63,6 @@ public class Character : MonoBehaviour
     {
         timerStart = false;
         circle.sprite = greenCircle;
-        time = 1f;
+        time = 0.5f;
     }
 }
